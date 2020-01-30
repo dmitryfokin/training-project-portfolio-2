@@ -1,1 +1,5 @@
-const projectCardsList = document.getElementById('project-cards-list')
+$(document).ready(function () {
+
+	$('#project-cards-list').mixItUp()
+
+})
