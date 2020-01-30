@@ -18,17 +18,19 @@
 .portfolio-filter__item {
 	margin-right: 80px;
 
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.portfolio-filter__item a {
 	font-size: 28px;
 	font-weight: 800;
 	color: rgb(143, 165, 174);
 	line-height: 1.2;
 
-	&:first-child {
+	&:active {
 		color: #000;
-	}
-
-	&:last-child {
-		margin-right: 0;
 	}
 }
 

@@ -1,0 +1,1 @@
+const projectCardsList = document.getElementById('project-cards-list')

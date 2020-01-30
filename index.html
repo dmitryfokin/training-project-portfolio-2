@@ -20,9 +20,12 @@
 			<nav class="nav">
 				<a href="#" class="nav-logo anderline-dicoration">ДФ</a>
 				<ul class="nav-menu">
-					<li><a href="#" class="nav-menu__link">Главная</a></li>
-					<li><a href="#" class="nav-menu__link">Работы</a></li>
-					<li><a href="#" class="nav-menu__link">Контакты</a></li>
+					<li><a href="#" class="nav-menu__link anderline-dicoration anderline-dicoration--link">Главная</a>
+					</li>
+					<li><a href="#" class="nav-menu__link anderline-dicoration anderline-dicoration--link">Работы</a>
+					</li>
+					<li><a href="#" class="nav-menu__link anderline-dicoration anderline-dicoration--link">Контакты</a>
+					</li>
 				</ul>
 				<ul class="list-social-icons">
 					<li>
@@ -124,16 +127,16 @@
 					<div class="portfolio-filter">
 						<ul class="portfolio-filter__list">
 							<li class="portfolio-filter__item">
-								<botton>Все работы</botton>
+								<a class="filter" data-filter="all" href="#!">Все работы</a>
 							</li>
 							<li class="portfolio-filter__item">
-								<botton>Bootstrap</botton>
+								<a class="filter" data-filter=".filter-bootstrap" href="#!">Bootstrap</a>
 							</li>
 							<li class="portfolio-filter__item">
-								<botton>WordPress</botton>
+								<a class="filter" data-filter=".filter-wordpress" href="#!">WordPress</a>
 							</li>
 							<li class="portfolio-filter__item">
-								<botton>Frontend</botton>
+								<a class="filter" data-filter=".filter-frontend" href="#!">Frontend</a>
 							</li>
 						</ul>
 					</div>
@@ -175,10 +178,10 @@
 							<!-- <<< Карточка проекта <<< -->
 						</div>
 
-						<div class="project-cards__row">
+						<div class="project-cards__row" id="project-cards-list">
 
 							<!-- >>> Карточка проекта >>> -->
-							<div class="project-card row-third">
+							<div class="project-card row-third mix filter-bootstrap .filter-frontend">
 								<div class="project-card__img-wrapper">
 									<img src="img/projects/project-img-003.jpg" alt="project" class="project-card__img">
 								</div>
@@ -192,7 +195,7 @@
 							<!-- <<< Карточка проекта <<< -->
 
 							<!-- >>> Карточка проекта >>> -->
-							<div class="project-card row-third">
+							<div class="project-card row-third mix filter-bootstrap filter-wordpress">
 								<div class="project-card__img-wrapper">
 									<img src="img/projects/project-img-004.jpg" alt="project" class="project-card__img">
 								</div>
@@ -206,7 +209,7 @@
 							<!-- <<< Карточка проекта <<< -->
 
 							<!-- >>> Карточка проекта >>> -->
-							<div class="project-card row-third">
+							<div class="project-card row-third mix filter-wordpress">
 								<div class="project-card__img-wrapper">
 									<img src="img/projects/project-img-005.jpg" alt="project" class="project-card__img">
 								</div>
@@ -465,6 +468,10 @@
 			Этот сайт сделал в рамках прохождения обучения по верстке на курсах от WebCademy.ru
 		</div>
 	</footer>
+
+	<script src="libs/js/jquery-3.4.1.min.js"></script>
+	<script src="libs/js/jquery.mixitup.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>

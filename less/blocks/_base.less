@@ -64,6 +64,10 @@ button {
 	cursor: pointer;
 }
 
+.mix {
+	display: none;
+}
+
 .container {
 	// background-color: #e9b5b5;
 
@@ -123,6 +127,24 @@ button {
 	&::after {
 		bottom: 2px;
 		height: 7px;
+	}
+}
+
+.anderline-dicoration--link {
+	&::after {
+		bottom: 3px;
+		height: 6px;
+		right: unset;
+		left: -5;
+		width: 0;
+
+
+		transition: 0.5s;
+	}
+
+	&:hover:after {
+		right: -5px;
+		width: 110%;
 	}
 }
 
