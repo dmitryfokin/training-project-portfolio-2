@@ -1,26 +1,65 @@
+.section-contacts {
+	padding: 150px 0;
+	background-color: #f4f8f9;
+}
+
 .section-contacts__row {
 	display: flex;
+	justify-content: space-between;
 }
 
 .contacts-info-wrapper {
-	width: 50%;
+	width: 40%;
+
+	padding-top: 30px;
 }
 
 .form-callback-wrapper {
 	width: 50%;
+	padding-left: 40px;
 }
 
+.contacts-info__list-contacts-wrapper {
+	margin-bottom: 45px;
+}
+
+.cintacts-info__slogan {
+	margin-bottom: 45px;
+
+	font-size: 20px;
+	color: #000;
+	line-height: 1.6;
+	text-align: left;
+}
 
 
 .list-contacts__item {
 	display: flex;
+	margin-bottom: 30px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 .list-contacts__item-lable {
-	width: 30%;
+	width: 25%;
+
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.2;
 }
 
+.list-contacts__item-value {
+	font-size: 20px;
+	color: #96969d;
+	line-height: 1.2;
+	font-weight: 500;
+}
 
+.list-contacts__item-value-link {
+	color: rgb(3, 155, 229);
+}
 
 .form-callback {
 	width: 511px;
@@ -28,7 +67,8 @@
 
 	padding: 55px 60px 50px 65px;
 
-	box-shadow: 0px 28px 100px 0px rgba(194, 219, 235, 0.5);
+	background-color: #fff;
+	box-shadow: 0px 28px 100px 0px rgba(194, 219, 235, 1);
 }
 
 .form-callback__input-wrapper {
