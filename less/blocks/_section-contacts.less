@@ -1,11 +1,41 @@
 .section-contacts {
 	padding: 150px 0;
+
 	background-color: #f4f8f9;
+
+	background-image: url(../img/bg/line-5-bg-2_02.jpg);
+	background-repeat: repeat-y;
+	background-position: center;
+}
+
+.section-contacts__title {
+	margin-bottom: 70px;
+
+	& h2 {
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 
 .section-contacts__row {
+	position: relative;
+
 	display: flex;
 	justify-content: space-between;
+
+	&::after {
+		content: "";
+		display: block;
+
+		position: absolute;
+		top: 0;
+		left: -340px;
+
+		width: 448px;
+		height: 280px;
+
+		background-image: url(../img/bg/bg-66.png);
+	}
 }
 
 .contacts-info-wrapper {

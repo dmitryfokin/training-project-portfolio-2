@@ -21,6 +21,7 @@
 	&:last-child {
 		margin-right: 0;
 	}
+
 }
 
 .portfolio-filter__item a {
@@ -29,8 +30,12 @@
 	color: rgb(143, 165, 174);
 	line-height: 1.2;
 
-	&:active {
+	&.active {
 		color: #000;
+	}
+
+	&:hover {
+		color: @color-focus-1;
 	}
 }
 

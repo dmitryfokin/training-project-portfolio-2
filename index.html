@@ -10,17 +10,19 @@
 		href="https://fonts.googleapis.com/css?family=M+PLUS+1p:300,400,500,700,800,900&display=swap&subset=cyrillic-ext"
 		rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+
+	<script src="https://kit.fontawesome.com/d56abc1d9a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<!-- >>> шапка >>> -->
-	<header class="header none">
+	<header class="header">
 		<!-- <<< навигация <<< -->
 		<div class="nav__wrapper">
 			<nav class="nav">
 				<a href="#" class="nav-logo anderline-dicoration">ДФ</a>
 				<ul class="nav-menu">
-					<li><a href="#" class="nav-menu__link anderline-dicoration anderline-dicoration--link">Главная</a>
+					<li><a href="#" class="nav-menu__link anderline-dicoration">Главная</a>
 					</li>
 					<li><a href="#" class="nav-menu__link anderline-dicoration anderline-dicoration--link">Работы</a>
 					</li>
@@ -30,17 +32,17 @@
 				<ul class="list-social-icons">
 					<li>
 						<a href="#">
-							<img src="/img/icons/linkedin-in-brands.svg" alt="in" class="list-social-icons__img">
+							<i class="fab fa-linkedin-in list-social-icons__img list-social-icons__img--in"></i>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<img src="/img/icons/github-brands.svg" alt="github" class="list-social-icons__img">
+							<i class="fab fa-github list-social-icons__img list-social-icons__img--github"></i>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<img src="/img/icons/vk-brands.svg" alt="vk" class="list-social-icons__img">
+							<i class="fab fa-vk list-social-icons__img list-social-icons__img--vk"></i>
 						</a>
 					</li>
 				</ul>
@@ -62,13 +64,13 @@
 							и выполнением ТЗ.</p>
 					</div>
 					<div class="logo__text-links">
-						<button>Познакомиться</button>
-						<button>Контакты</button>
+						<a href="#" class="btn">Познакомиться</a>
+						<a href="#" class="btn btn--2">Контакты</a>
 					</div>
 				</div>
 			</div>
 
-			<div class="header__botton-row">
+			<div class="header__bottom-row">
 
 				<div class="skills">
 					<div class="skills__title">
@@ -81,29 +83,32 @@
 						<li class="skills__list-item">оптимизация по retina экраны</li>
 						<li class="skills__list-item">с Bootstrap и без него.</li>
 					</ul>
+					<a href="#" class="btn">Смотреть работы</a>
 				</div>
 
 				<div class="in-touch">
 					<div class="in-touch__title">
 						<h3 title-3>На связи:</h3>
 					</div>
-					<ul class="list-social-icons">
+					<ul class="in-touch-social-icons">
 						<li>
 							<a href="#">
-								<img src="/img/icons/linkedin-in-brands.svg" alt="in"
-									class="list-social-icons__img list-social-icons__img--m">
+								<i class="fab fa-github in-touch-social-icon in-touch-social-icon-github"></i>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<img src="/img/icons/github-brands.svg" alt="github"
-									class="list-social-icons__img list-social-icons__img--m">
+								<i class="fab fa-telegram in-touch-social-icon in-touch-social-icon-telegram"></i>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<img src="/img/icons/vk-brands.svg" alt="vk"
-									class="list-social-icons__img list-social-icons__img--m">
+								<i class="fab fa-vk in-touch-social-icon in-touch-social-icon-vk"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-facebook in-touch-social-icon in-touch-social-icon-facebook"></i>
 							</a>
 						</li>
 					</ul>
@@ -116,7 +121,7 @@
 
 	<main class="main">
 		<!-- >>> Секция проектов >>> -->
-		<div class="section-portfolio none">
+		<div class="section-portfolio">
 			<div class="container">
 				<div class="section-portfolio__title">
 					<h2 class="title-2 anderline-dicoration anderline-dicoration--midl">Портфолио</h2>
@@ -160,6 +165,7 @@
 								<div class="project-card__desc">
 									Верстка многостраничного сайта.
 								</div>
+								<a href="#" class="btn btn-hide">Смотреть проект</a>
 							</div>
 							<!-- <<< Карточка проекта <<< -->
 
@@ -314,9 +320,9 @@
 		<!-- <<< Секция проектов <<< -->
 
 		<!-- >>> Секция как я работаю >>> -->
-		<div class="section-technology none">
+		<div class="section-technology">
 			<div class="container">
-				<div class="section-portfolio__title">
+				<div class="section-technology__title">
 					<h2 class="title-2 anderline-dicoration anderline-dicoration--midl">Как я работаю</h2>
 				</div>
 
@@ -451,11 +457,12 @@
 		<!-- >>> Контакты >>> -->
 		<div class="section-contacts">
 			<div class="container">
-				<div class="section-portfolio__title">
+				<div class="section-contacts__title">
 					<h2 class="title-2 anderline-dicoration anderline-dicoration--midl">Контакты</h2>
 				</div>
 
 				<div class="section-contacts__row">
+
 					<div class="contacts-info-wrapper">
 						<div class="cintacts-info__slogan">
 							Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы
@@ -508,22 +515,28 @@
 						</div>
 
 						<div class="contacts-info__list-social-icons-wrapper">
-							<ul class="list-social-icons">
+
+							<ul class="in-touch-social-icons">
 								<li>
 									<a href="#">
-										<img src="/img/icons/linkedin-in-brands.svg" alt="in"
-											class="list-social-icons__img">
+										<i class="fab fa-github in-touch-social-icon in-touch-social-icon-github"></i>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<img src="/img/icons/github-brands.svg" alt="github"
-											class="list-social-icons__img">
+										<i
+											class="fab fa-telegram in-touch-social-icon in-touch-social-icon-telegram"></i>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<img src="/img/icons/vk-brands.svg" alt="vk" class="list-social-icons__img">
+										<i class="fab fa-vk in-touch-social-icon in-touch-social-icon-vk"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i
+											class="fab fa-facebook in-touch-social-icon in-touch-social-icon-facebook"></i>
 									</a>
 								</li>
 							</ul>
@@ -546,7 +559,7 @@
 								<span class="fake-placeholder">Сообщение</span>
 							</div>
 							<div class="form-callback__submit-wrapper">
-								<input type="submit" value="Отправить">
+								<input type="submit" value="Отправить" class="btn">
 							</div>
 						</form>
 					</div>
@@ -557,10 +570,14 @@
 	</main>
 
 	<footer class="footer">
-		<div class="d">
-			© 2020 — Дмитрий Фокин
-			Веб-разработик из Москвы, занимаюсь версткой и созданием сайтов.<br>
-			Этот сайт сделал в рамках прохождения обучения по верстке на курсах от WebCademy.ru
+		<div class="container">
+			<div class="footer__copyright">
+				© 2020 — Дмитрий Фокин
+			</div>
+			<div class="footer-desc">
+				Веб-разработик из Москвы, занимаюсь версткой и созданием сайтов.<br>
+				Этот сайт сделал в рамках прохождения обучения по верстке на курсах от WebCademy.ru
+			</div>
 		</div>
 	</footer>
 

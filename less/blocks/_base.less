@@ -14,7 +14,7 @@ body {
 	width: 100%;
 	height: 100%;
 
-	color: #000;
+	color: @color-main-font;
 
 	font-family: 'M PLUS 1p', sans-serif;
 	font-size: 18px;
@@ -47,6 +47,10 @@ h4,
 p {
 	margin: 0;
 	padding: 0;
+
+	&::selection {
+		background: @color-main;
+	}
 }
 
 img {
@@ -99,12 +103,12 @@ button {
 
 		position: absolute;
 
-		bottom: 5px;
+		bottom: 6px;
 		left: -5px;
 		right: -5px;
 		height: 10px;
 
-		background-color: #fbdc4d;
+		background-color: @color-main;
 		z-index: -1;
 	}
 }
@@ -160,7 +164,7 @@ button {
 	font-size: 64px;
 	font-weight: 800;
 	line-height: 1.2;
-	color: #000;
+	color: @color-main-font;
 	width: fit-content;
 	// text-shadow: 0px 3px 42.32px rgba(255, 255, 255, 0.004);
 }
@@ -169,7 +173,7 @@ button {
 	font-size: 40px;
 	font-weight: 800;
 	line-height: 1.2;
-	color: #000;
+	color: @color-main-font;
 	width: fit-content;
 	// text-shadow: 0px 3px 42.32px rgba(255, 255, 255, 0.004);
 }
@@ -178,7 +182,7 @@ button {
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 1.2;
-	color: #000;
+	color: @color-main-font;
 	width: fit-content;
 }
 
@@ -187,6 +191,58 @@ button {
 	font-size: 26px;
 	font-weight: 700;
 	line-height: 1.2;
-	color: #000;
+	color: @color-main-font;
 	width: fit-content;
+}
+
+.btn {
+	display: inline-block;
+	margin-right: 20px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	height: 65px;
+
+	padding: 20px 40px;
+
+	text-align: center;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.2;
+
+	color: @color-main-font;
+	background-color: @color-main;
+
+	border: none;
+	border-radius: 50px;
+}
+
+.btn--2 {
+	height: 61px;
+
+	padding-top: 18px;
+
+	background-color: #fff;
+	color: #464646;
+	border: 2px solid #464646;
+}
+
+.btn-hide {
+	display: none;
+}
+
+body,
+input,
+textarea,
+a,
+ul li,
+.title-2,
+.title-3,
+.title-4,
+.title-5 {
+	&::selection {
+		background: @color-main;
+	}
 }
