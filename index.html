@@ -14,7 +14,7 @@
 
 <body>
 	<!-- >>> шапка >>> -->
-	<header class="header">
+	<header class="header none">
 		<!-- <<< навигация <<< -->
 		<div class="nav__wrapper">
 			<nav class="nav">
@@ -116,7 +116,7 @@
 
 	<main class="main">
 		<!-- >>> Секция проектов >>> -->
-		<div class="section-portfolio">
+		<div class="section-portfolio none">
 			<div class="container">
 				<div class="section-portfolio__title">
 					<h2 class="title-2 anderline-dicoration anderline-dicoration--midl">Портфолио</h2>
@@ -314,7 +314,7 @@
 		<!-- <<< Секция проектов <<< -->
 
 		<!-- >>> Секция как я работаю >>> -->
-		<div class="section-technology">
+		<div class="section-technology none">
 			<div class="container">
 				<div class="section-portfolio__title">
 					<h2 class="title-2 anderline-dicoration anderline-dicoration--midl">Как я работаю</h2>
@@ -456,7 +456,7 @@
 				</div>
 
 				<div class="section-contacts__row">
-					<div class="contacts-info">
+					<div class="contacts-info-wrapper">
 						<div class="cintacts-info__slogan">
 							Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы
 							над проектом — напишите
@@ -528,11 +528,24 @@
 
 						</div>
 					</div>
+
 					<div class="form-callback-wrapper">
 						<form action="#" method="POST" class="form-callback">
-							<input type="email" name="email" id="form-callback__email">
-							<input type="text" name="theme" id="form-callback__theme">
-							<textarea name="message" id="form-callback__message" cols="30" rows="10"></textarea>
+							<div class="form-callback__input-wrapper">
+								<input type="email" name="email" class="form-callback__input">
+								<span class="fake-placeholder">Ваш email</span>
+							</div>
+							<div class="form-callback__input-wrapper">
+								<input type="text" name="theme" class="form-callback__input">
+								<span class="fake-placeholder">Тема письма</span>
+							</div>
+							<div class="form-callback__message-wrapper">
+								<textarea name="message" class="form-callback__textarea" cols="30" rows="10"></textarea>
+								<span class="fake-placeholder">Сообщение</span>
+							</div>
+							<div class="form-callback__submit-wrapper">
+								<input type="submit" value="Отправить">
+							</div>
 						</form>
 					</div>
 				</div>
