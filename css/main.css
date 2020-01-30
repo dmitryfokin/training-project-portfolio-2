@@ -140,6 +140,7 @@ button {
   width: fit-content;
 }
 .title-5 {
+  display: inline-block;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
