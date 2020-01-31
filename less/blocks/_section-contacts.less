@@ -62,7 +62,6 @@
 	text-align: left;
 }
 
-
 .list-contacts__item {
 	display: flex;
 	margin-bottom: 30px;
@@ -113,10 +112,20 @@
 
 	padding: 0 5px;
 
-	border: none;
-	border-bottom: 1px solid #eaeaea;
-}
+	font-size: 20px;
+	color: @color-main-font;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: left;
 
+	border: none;
+	border-bottom: 2px solid #eaeaea;
+
+	&:active,
+	&:focus {
+		border-bottom-color: @color-focus-1;
+	}
+}
 
 .form-callback__message-wrapper {
 	position: relative;
@@ -128,10 +137,21 @@
 
 	padding: 10px 5px;
 
+	font-size: 20px;
+	color: @color-main-font;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: left;
+
 	border: none;
-	border-bottom: 1px solid #eaeaea;
+	border-bottom: 2px solid #eaeaea;
 
 	outline: none;
+
+	&:active,
+	&:focus {
+		border-bottom-color: @color-focus-1;
+	}
 }
 
 .fake-placeholder {
